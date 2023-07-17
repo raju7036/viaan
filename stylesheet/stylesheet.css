@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+@font-face {font-family: "Paralucent W00 Heavy";
+    src: url("../fonts/"); /* IE9*/
+    src: url("../fonts/?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/c1d440b87551df56c26f7e478436b8ce.woff2") format("woff2"), /* chrome、firefox */
+    url("../fonts/c1d440b87551df56c26f7e478436b8ce.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/c1d440b87551df56c26f7e478436b8ce.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/c1d440b87551df56c26f7e478436b8ce.svg#Paralucent W00 Heavy") format("svg"); /* iOS 4.1- */
+  }
+
+
+
+
+
+
+
+
+
+.middle {
+    height: 100%;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 1vw;
+
+    }
+
+    .container {
+        padding: 0 .85vw !important;
+        width: 87vw !important;
+        margin: 0 auto;
+        max-width: 87vw !important;
+    }
+
+    .row>* {
+        padding-left: .84vw !important;
+        padding-right: .84vw !important;
+    }
+
+    .row {
+        margin: 0 -.9vw !important;
+    }
+}
+
+
+
+.nav1{
+    z-index: 999;
+    padding: 1vw 0 !important;
+    margin: 0;
+    position: absolute !important;
+    width: 100%;
+}
+.navbar-brand img{
+    width: 11.5vw;
+}
+.nav-item .nav-link{
+    font-size: 0.9vw;
+    font-family: 'Poppins';
+    font-weight: 400;
+    margin: 0 0.38vw;
+    color: #fff;
+    padding: 0 0.6vw !important;
+}
+.nav-link:focus, .nav-link:hover{
+    color: #fff !important  ;
+}
+.viaan-banner{
+    background-image: url('../imgs/viaanbanner.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+.viaan-banner .main_heading h1{
+    color: #fff;
+    font-size: 3.2vw;
+    font-weight: bold;
+    font-family: 'Cinzel Decorative';
+    line-height: 4.2vw;
+    padding: 0 ;
+    margin: 0;
+}
+.main_heading{
+    position: relative;
+  padding-left: 6vw;
+}
+.main_heading img{
+    width: 3.3vw;
+    position: absolute;
+    top: -1vw;
+    left: 1vw;
+}
+.main_heading::before{
+    content: '';
+    top: 1.7vw;
+    left: 3.6vw;
+    width: 0.05vw;
+    background-color: #fff;
+    height: 98%;
+    position: absolute;
+
+}
+.main_heading .reverse_img{
+    width: 3vw;
+    position: absolute;
+    left: 47vw;
+    top: 10.5vw;
+    transform: rotate(178deg);
+}
+.sub_heading{
+    margin-top: 2vw;
+}
+.sub_heading p{
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    margin: 0 !important;
+    font-size: 0.95vw;
+}
+.sub_heading b{
+    color: #fff;
+    padding: 0 !important;
+    margin: 0;
+    font-size: 1.3vw;
+}
+
+
+.viaan_ban2{
+    background-image: url('../imgs/viaanbanner2.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 5vw;
+}
+.viaan_ban2 .headg{
+    position: relative;
+}
+.viaan_ban2 .headg img{
+    position: absolute;
+    bottom: -1vw;
+    width: 4vw;
+    right: 20vw;
+}
+.viaan_ban2 .headg h1{
+    color: #fff;
+    font-size: 3.8vw;
+    font-family: 'Cinzel Decorative';
+    padding: 0;
+    margin: 0 0 1.5vw;
+}
+.viaan_ban2 .headg h1 span{
+    color: #c92309;
+    font-size: 4.1vw;
+    position: relative;
+    font-style: italic;
+}
+.viaan_ban2 .headg h1 span::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 0.1vw;
+    background: red;
+    bottom: 3px;
+    
+}
+.viaan_ban2 .headg p span{
+    color: #fff;
+    font-family: 'Cinzel Decorative';
+    font-size: 1.1vw;
+    padding: 0;
+    margin: 0.5vw 0;
+}
+.viaan_ban2 .headg p{
+    color: #fff;
+    font-size: 0.97vw;
+    line-height: 1.6vw;
+    font-weight: 400;
+    padding: 0;
+    margin: 0 0 1.7vw;
+}
+.viaan_ban2 .headg .para_text{
+    color: #fff;
+    font-size: 1.05vw;
+    letter-spacing: 0.1vw;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}   
+
+.upcoming_works{
+    background-color: #000;
+    padding: 5vw;    
+}
+.upcoming_works .upheding h1{
+    color: #fff;
+    padding: 0 0 3vw;
+    margin: 0;
+    font-size: 3.3vw;
+    text-align: center;
+    font-family: 'Cinzel Decorative';
+}
+.upcoming_works .upc_img{
+    position: relative;
+    overflow: hidden;
+}
+.upc_img img{
+    width: 100%;
+    padding: 0.1vw;
+}
+.upc_img img:hover{
+    transition: 1s ease-in-out all;
+    transform: scale(1.1);
+}
+.upc_img .up_sub{
+    position: absolute;
+    bottom: 1.5vw;
+    left: 2vw;
+}
+.upc_img .up_sub h4{
+    color: #fff;
+    font-size: 1.7vw;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Cinzel Decorative Bold';
+}
+.upc_img .up_sub p{
+    color: #fff;
+    padding: 0;
+    margin: 0.3vw 0;
+    font-size: 0.9vw;
+    font-weight: 500;
+}
+
+.media{
+    background-image: url('../imgs/mediabg.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 5vw;
+}
+.media_heading h1{
+    text-align: center;
+    color: #fff;
+    font-family: 'Cinzel Decorative';
+    font-size: 3.2vw;
+    padding: 0;
+    margin: 0 0 2vw;
+}
+.media_img img{
+    width: 100%;
+    padding: 1vw;
+}
+.media-text p span{
+    color: #cfcfcf;
+    font-size: 0.88vw;
+
+}
+.about_media1{
+    margin: 1vw 0;
+}
+.media-text h4{
+    font-family: 'Cinzel Decorative';
+    color: #fff;
+    padding: 0;
+    margin: 1vw 0;
+    font-size: 1.4vw;
+    line-height: 2.2vw;
+}
+.media-text p{
+    color: #fff;
+    font-size: 1vw;
+    padding: 0;
+    margin: 0.5vw 0;
+    font-weight: 400;
+}
+
+
+footer{
+    background-image: url('../imgs/footer.jpg');
+    padding: 5vw 0 2.5vw;
+    background-position: center;
+    background-size: cover;
+}
+.footer_heading h1{
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 900;
+    font-size: 4.7vw;
+    color: #fff;
+    padding: 0;
+    margin: 0 0 0vw;
+}
+.footer_heading p{
+    color: #fff;
+    font-size: 1vw;
+    padding:  0;
+    margin: 0;
+    font-weight: 500;
+}
+hr{
+    border-bottom: 0.1vw solid #cfcfcf !important;
+    margin: 4vw 0 2vw !important;
+}
+.footer_text p{
+        color: #fff;
+        font-size: 0.9vw;
+        padding: 0;
+        margin: 0;
+}
+.footer_text p a{
+    text-decoration: none;
+    font-size: 0.95vw;
+    font-weight: 600;
+    color: #c92309;
+}
+.social-media{
+    float: right;
+}
+.social-media i{
+    color: #fff;
+    margin: 0 0.7vw;
+    font-size: 1.3vw;
+}
+.viaan .slick-arrow{
+    position: absolute;
+    bottom: 3vw;
+    border: inherit;
+    background: inherit;
+    color: #fff;
+    z-index: 999;
+}.viaan .slick-arrow i{
+    font-size: 3vw;
+}
+.viaan .next{
+    left: 7vw;
+}
+.viaan .previous{
+    right: 7vw;
+}
+
+.gallery{
+    background-image: url('../imgs/gallery_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 5vw 0;
+}
+.gallery_img img{
+    width: 100%;
+}
+.gallery_img{
+    padding: 1vw;
+}
+.gallery .slick-center{
+    transform: scale(1.2);
+    transition: ease-in-out;
+}
+.gallery_heading h1{
+    text-align: center;
+    color: #fff;
+    font-size: 3vw;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 500;
+    padding: 0;
+    margin: 0 0 3vw;
+}
+
+.gallery .slick-arrow{
+    position: absolute;
+    top: 5vw;
+    border: inherit;
+    background: inherit;
+    color: #fff;
+    z-index: 999;
+}
+.gallery .slick-arrow i{
+    color: #fff;
+    font-size: 3vw;
+}
+.gallery .previous{
+    right: 3vw;
+}
+.gallery .next{
+    left: 3vw;
+}
+
+
+
+#map {
+    width: 600px;
+    height: 600px;
+  }
+  .location {
+    fill: red;
+    stroke: #000;
+    stroke-width: 1px;
+    cursor: pointer;
+  }
